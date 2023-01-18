@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href='http://www.fontonline.ir/css/BYekan.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<!--=======================Scroll Indicator========================-->
+<div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+</div>
+<!--===========================Heading=============================-->
+<img src="../img/wave-header.svg" class="heading-img" alt="My SVG"/>
+<div class="header">
+    <div class="header-nav">
+        <div class="access-bar">
+            <i class="fa fa-user"></i>
+            <i class="fa fa-shopping-cart"></i>
+        </div>
+        <div class="links">
+            <a href="#" id="home">خانه</a>
+            <a href="#">محصولات</a>
+            <a href="#">ارتباط با ما</a>
+        </div>
+        <div class="logo">LOGO</div>
+    </div>
+    <div class="header-banner">
+        <div class="banner-img">
+            <img src="../img/undraw_online_groceries.png" alt="">
+        </div>
+        <div class="banner-text">
+            <h1>فروشگاه مواد غذایی آسیای شرقی</h1>
+            <h2>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</h2>
+        </div>
+    </div>
+</div>
+
+<!--===========================Search=============================-->
+<div class="search">
+    <div class="filter">
+        <select name="" id="sltFilter">
+            <option value="">مرتب بر اساس: جدیدترین</option>
+            <option value="">مرتب بر اساس: ارزان ترین</option>
+            <option value="">مرتب بر اساس: پرفروش ترین</option>
+        </select>
+    </div>
+    <div class="search-items">
+        <label for="search"></label>
+        <i class="fa fa-search icon"></i>
+        <input type="text" id="search" placeholder="دنبال چی می گردی؟">
+    </div>
+</div>
+
+<!--===========================Products=============================-->
+<div class="products">
+    <div class="product-text">
+        <h2>محصولات ما</h2>
+    </div>
+    <div class="product-items">
+        <div class="product-item">
+            <img src="../img/lemonade.png" alt="">
+            <span>نوشیدنی</span>
+        </div>
+        <div class="product-item">
+            <img src="../img/pngtree-cute-candy.png" alt="">
+            <span>تنقلات</span>
+        </div>
+        <div class="product-item">
+            <img src="../img/noodles_%20(1).png" alt="">
+            <span>نودل</span>
+        </div>
+        <div class="product-item">
+            <img src="../img/Chili-sauce-spicy.png" alt="">
+            <span>سس و ادویه</span>
+        </div>
+    </div>
+</div>
+
+<!--=============================Tab Links=============================-->
+<div class="tab">
+    <button class="tablinks" onclick="openFood(event, 'noodle')" id="defaultOpen">نودل</button>
+    <button class="tablinks" onclick="openFood(event, 'tea')">دمنوش</button>
+    <button class="tablinks" onclick="openFood(event, 'dressing')">سس</button>
+    <button class="tablinks" onclick="openFood(event, 'coffee')">کافی</button>
+    <button class="tablinks" onclick="openFood(event, 'junk')">تنقلات</button>
+    <button class="tablinks" onclick="openFood(event, 'conserve')">کنسرو</button>
+    <button class="tablinks" onclick="openFood(event, 'spice')">ادویه و چاشنی</button>
+</div>
+
+<!------------------noodle------------------->
+<div id="noodle" class="tabcontent">
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/noodle1.jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>نودل میگو</h3>
+            <h4>새우 국수</h4>
+        </div>
+        <div class="card-price">
+            <span>20000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/noodle2.jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>نودل مرغ</h3>
+            <h4>새우 국수</h4>
+        </div>
+        <div class="card-price">
+            <span>20000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/noodle3.jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>نودل اردک</h3>
+            <h4>새우 국수</h4>
+        </div>
+        <div class="card-price">
+            <span>18000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/noodle4.jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>نودل سبزیجات</h3>
+            <h4>새우 국수</h4>
+        </div>
+        <div class="card-price">
+            <span>18000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/noodle5.jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>نودل گوشت</h3>
+            <h4>새우 국수</h4>
+        </div>
+        <div class="card-price">
+            <span>20000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/noodle6.jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>نودل کاری</h3>
+            <h4>새우 국수</h4>
+        </div>
+        <div class="card-price">
+            <span>18000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/noodle7.jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>نودل کیمچی</h3>
+            <h4>새우 국수</h4>
+        </div>
+        <div class="card-price">
+            <span>125000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/noodle8.jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>نودل شیشه ای</h3>
+            <h4>새우 국수</h4>
+        </div>
+        <div class="card-price">
+            <span>180000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/noodle9.jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>نودل برنج نواری</h3>
+            <h4>새우 국수</h4>
+        </div>
+        <div class="card-price">
+            <span>60000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/noodle10.jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>نودل تخم مرغی</h3>
+            <h4>새우 국수</h4>
+        </div>
+        <div class="card-price">
+            <span>60000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+</div>
+<!------------------tea------------------->
+<div id="tea" class="tabcontent">
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/tea1.jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>دمنوش خواب آرام</h3>
+            <h4>Good Night's Sleep</h4>
+        </div>
+        <div class="card-price">
+            <span>55000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/tea2.jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>دمنوش تمشک</h3>
+            <h4>Cranberry & Raspberry</h4>
+        </div>
+        <div class="card-price">
+            <span>50000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/tea3.jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>دمنوش میوه های جنگلی</h3>
+            <h4>Forest Fruit</h4>
+        </div>
+        <div class="card-price">
+            <span>55000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/tea4.jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>دمنوش لیمو با دارچین</h3>
+            <h4>Sunny Orange</h4>
+        </div>
+        <div class="card-price">
+            <span>50000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/tea5.jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>دمنوش تمشک آبی</h3>
+            <h4>Blackcurrant</h4>
+        </div>
+        <div class="card-price">
+            <span>55000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+</div>
+<!------------------dressing------------------->
+<div id="dressing" class="tabcontent">
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/dressing(1).jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>سس کیمچی</h3>
+            <h4>Kimchi Sauce</h4>
+        </div>
+        <div class="card-price">
+            <span>68000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/dressing(2).jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>سس HP</h3>
+            <h4>HP Sauce</h4>
+        </div>
+        <div class="card-price">
+            <span>42000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/dressing(3).jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>سس فلفل سیاه</h3>
+            <h4>Black Pepper Sauce</h4>
+        </div>
+        <div class="card-price">
+            <span>69000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/dressing(4).jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>سس ساتای</h3>
+            <h4>Satay Sauce</h4>
+        </div>
+        <div class="card-price">
+            <span>78000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/dressing(5).jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>سس بولداگ</h3>
+            <h4>Bull-Dog</h4>
+        </div>
+        <div class="card-price">
+            <span>130000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/dressing(6).jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>سس سامیانگ</h3>
+            <h4>Samyang Sauce</h4>
+        </div>
+        <div class="card-price">
+            <span>495000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+</div>
+<!------------------coffee------------------->
+<div id="coffee" class="tabcontent">
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/coffee(1).jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>کافی میت</h3>
+            <h4>Coffe Mate</h4>
+        </div>
+        <div class="card-price">
+            <span>65000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/coffee(2).jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>کاپوچینو</h3>
+            <h4>Cappuccino</h4>
+        </div>
+        <div class="card-price">
+            <span>119000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/coffee(3).jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>کافی میکس التونسا</h3>
+            <h4>Altunsa Coffee Mix</h4>
+        </div>
+        <div class="card-price">
+            <span>98000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/coffee(4).jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>هات چاکلت</h3>
+            <h4>Chocolatto</h4>
+        </div>
+        <div class="card-price">
+            <span>68000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/coffee(5).jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>نسکافه گلد</h3>
+            <h4>Nescafe Gold</h4>
+        </div>
+        <div class="card-price">
+            <span>41000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/coffee(6).jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>کافی میکس موکا</h3>
+            <h4>Mocha Gold Mild</h4>
+        </div>
+        <div class="card-price">
+            <span>179000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+</div>
+<!------------------junk------------------->
+<div id="junk" class="tabcontent">
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/junk(1).jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>ویفر پنیری</h3>
+            <h4>Xymopok</h4>
+        </div>
+        <div class="card-price">
+            <span>125000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/junk(2).jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>کوکی شکلات چیپسی</h3>
+            <h4>Choco-Chip Cookies</h4>
+        </div>
+        <div class="card-price">
+            <span>12000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/junk(3).jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>بیسکولاتا</h3>
+            <h4>Biscolata</h4>
+        </div>
+        <div class="card-price">
+            <span>45000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/junk(4).jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>شوکورول وانیلی</h3>
+            <h4>Wafer Stick</h4>
+        </div>
+        <div class="card-price">
+            <span>49000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/junk(5).jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>پپرو</h3>
+            <h4>Pepero</h4>
+        </div>
+        <div class="card-price">
+            <span>59000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/junk(6).jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>Churros</h3>
+            <h4>츄러스</h4>
+        </div>
+        <div class="card-price">
+            <span>48000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/junk(7).jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>پاستیل انگور سیاه</h3>
+            <h4>마이구미</h4>
+        </div>
+        <div class="card-price">
+            <span>12000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+</div>
+<!------------------conserve------------------->
+<div id="conserve" class="tabcontent">
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/conserve(1).jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>کنسرو جک فروت</h3>
+            <h4>Jack Fruit</h4>
+        </div>
+        <div class="card-price">
+            <span>70000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/conserve(2).jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>کنسرو شاه بلوط</h3>
+            <h4>Water Chestnuts</h4>
+        </div>
+        <div class="card-price">
+            <span>49000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/conserve(3).jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>کنسرو بامبو</h3>
+            <h4>Bamboo Shoots</h4>
+        </div>
+        <div class="card-price">
+            <span>60000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/conserve(4).jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>کنسرو مارچوبه</h3>
+            <h4>Green Asparagus</h4>
+        </div>
+        <div class="card-price">
+            <span>75000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+</div>
+<!------------------spice------------------->
+<div id="spice" class="tabcontent">
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/spice(1).jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>پودر فلفل قرمز</h3>
+            <h4>Red Pepper Powder</h4>
+        </div>
+        <div class="card-price">
+            <span>33000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/spice(2).jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>ادویه کاری</h3>
+            <h4>카레</h4>
+        </div>
+        <div class="card-price">
+            <span>30000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/spice(3).jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>پودر گانودرما</h3>
+            <h4>Ganoderma Powder</h4>
+        </div>
+        <div class="card-price">
+            <span>199000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/spice(4).jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>پودر بهبود دهنده</h3>
+            <h4>ZhongXing</h4>
+        </div>
+        <div class="card-price">
+            <span>39000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="../img/spice(5).jpg" alt="">
+        </div>
+        <div class="card-title">
+            <h3>پودر سوخاری</h3>
+            <h4>Bread Crumbs</h4>
+        </div>
+        <div class="card-price">
+            <span>17000 تومان</span>
+            <span class="order">سفارش</span>
+        </div>
+    </div>
+</div>
+
+<!--========================Carousel=========================-->
+<div class="carousel-container">
+    <h2>پیشنهاد ویژه</h2>
+    <div class="slide hi-slide">
+        <div class="hi-prev"></div>
+        <div class="hi-next"></div>
+        <ul>
+            <li>
+                <img src="../img/noodle1.jpg" alt="">
+                <h3>نودل میگو</h3>
+                <span class="last-price">20000 تومان</span>
+                <span class="new-price">17000 تومان</span>
+            </li>
+
+            <li>
+                <img src="../img/tea2.jpg" alt="">
+                <h3>دمنوش تمشک</h3>
+                <span class="last-price">50000 تومان</span>
+                <span class="new-price">44000 تومان</span>
+            </li>
+
+            <li>
+                <img src="../img/dressing(4).jpg" alt="">
+                <h3>سس ساتای</h3>
+                <span class="last-price">42000 تومان</span>
+                <span class="new-price">34000 تومان</span>
+            </li>
+
+            <li>
+                <img src="../img/coffee(1).jpg" alt="">
+                <h3>کافی میت</h3>
+                <span class="last-price">65000 تومان</span>
+                <span class="new-price">58000 تومان</span>
+            </li>
+
+            <li>
+                <img src="../img/junk(1).jpg" alt="">
+                <h3>ویفر پنیری</h3>
+                <span class="last-price">125000 تومان</span>
+                <span class="new-price">91000 تومان</span>
+            </li>
+
+            <li>
+                <img src="../img/conserve(1).jpg" alt="">
+                <h3>کنسرو جک فروت</h3>
+                <span class="last-price">70000 تومان</span>
+                <span class="new-price">64000 تومان</span>
+            </li>
+
+            <li>
+                <img src="../img/spice(3).jpg" alt="">
+                <h3>پودر گانودرما</h3>
+                <span class="last-price">199000 تومان</span>
+                <span class="new-price">168000 تومان</span>
+            </li>
+
+            <li>
+                <img src="../img/noodle5.jpg" alt="">
+                <h3>نودل گوشت</h3>
+                <span class="last-price">20000 تومان</span>
+                <span class="new-price">17000 تومان</span>
+            </li>
+        </ul>
+    </div>
+    <!------------------------Timer------------------------->
+    <div id="countdown"></div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="jquery.hislide.js"></script>
+<script>
+    $('.slide').hiSlide();
+</script>
+
+<script>
+    let countdate = new Date("Jan 11, 2021 00:00:00").getTime();
+    let x = setInterval(function () {
+        let current = new Date().getTime();
+        let distance = countdate - current;
+        let daysleft = Math.floor(distance / (1000 * 60 * 60 * 24));
+        let hoursleft = Math.floor(distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+        let minutesleft = Math.floor(distance % (1000 * 60 * 60) / (1000 * 60));
+        let secondsleft = Math.floor(distance % (1000 * 60) / 1000);
+        document.getElementById('countdown').innerHTML = daysleft + " روز " + hoursleft + " ساعت " + minutesleft + " دقیقه " + secondsleft + " ثانیه";
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById('countdown').innerHTML = "Finished";
+        }
+    }, 1000);
+</script>
+
+</body>
+</html>
